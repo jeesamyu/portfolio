@@ -1,0 +1,69 @@
+body{
+    background:none;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    
+}
+
+form{
+    justify-content: center;
+    flex-flow: column;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color:rgba(19, 19, 19, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-bottom:10px;
+    box-shadow:0px 0px 10px 5px rgb(112, 112, 112);
+}
+
+.container-fluid{
+    background:transparent;
+    width:fit-content;  
+    
+}
+
+h1{
+    color: #fff;
+    letter-spacing: 3px;
+    border-bottom: 2px solid #818181;
+}
+
+mat-form-field{
+    width: 450px;
+    margin-top: 20px;
+}
+input{
+    color: #fff;
+}
+
+mat-label{
+    color: white;
+}
+
+::ng-deep.mat-form-field-infix{
+    border-bottom: 2px solid #fff;
+}
+
+button{
+    color: #fff;
+    font-weight: 800;
+    font-size: 18px;
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+.b1:hover{
+    color: #ff4545;
+    box-shadow: 0 0 10px 2px #ff4545 !important;
+    border: 1px solid #ff4545;
+}
+
+.b2:hover{
+    color: #2bb2b6;
+    box-shadow: 0 0 10px 2px #2bb2b6 !important;
+    border: 1px solid #2bb2b6;
+}

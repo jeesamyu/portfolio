@@ -1,0 +1,228 @@
+body{
+    height:100%;
+    width: 100%;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1{
+    font-size: 3em;
+    color: #000;
+    font-weight: 500;
+    letter-spacing: 10px;
+}
+
+h1 span{
+    animation: animate 3.4s linear infinite;
+}
+
+h1 span:nth-child(1){
+    animation-delay:0s;
+}
+h1 span:nth-child(2){
+    animation-delay:0.4s;
+}
+h1 span:nth-child(3){
+    animation-delay:0.8s;
+}
+h1 span:nth-child(4){
+    animation-delay:1.2s;
+}
+h1 span:nth-child(5){
+    animation-delay:1.6s;
+}
+h1 span:nth-child(6){
+    animation-delay:2s;
+}
+h1 span:nth-child(7){
+    animation-delay:2.4s;
+}
+h1 span:nth-child(8){
+    animation-delay:2.8s;
+}
+
+@keyframes animate {
+    0%,90%{
+        color: #e1e1e1;
+        text-shadow:none;
+    }
+    100%{
+        color:#fff;
+        text-shadow: 0 0 10px #fff,
+                     0 0 30px #fff, 
+                     0 0 50px #fff, 
+                     0 0 90px #fff, 
+                     0 0 130px #fff, 
+                     0 0 170px #fff, 
+                     0 0 210px #fff;
+    }
+}
+
+.sidenav-container{
+    position: fixed;
+    background: url(../../assets/main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    height: 100%;
+}
+
+.mat-toolbar{
+    background: transparent;
+}
+
+.toggleIcon{
+    font-size:30px;
+    width: auto;
+    height: auto;
+}
+
+.side-nav{
+    width:25%;
+    box-shadow: 0 5px 20px #ffffff;
+    background:rgba(0, 0, 0, 0.5);
+}
+
+.main-heading{
+    padding-top:2px;
+    padding-left: 5px;
+    font-size: 1.9rem;
+    cursor: default;
+}
+
+.toolbar-row{
+    background:transparent;
+    justify-content: space-between;
+    color: #e1e1e1;
+}
+
+.heading-group{
+    display: inline-block;
+}
+
+.nav-items span{
+    margin-left: 50px;
+    cursor:pointer;
+    font-size: 16px;
+}
+.nav-items span:hover{
+    color: #fff;
+    text-shadow:0 0 20px #fff;
+}
+
+.divider{
+    background-color: #fff;
+}
+
+.toggleButton:hover{
+    box-shadow: 0 0 5px #000;
+}
+
+.sidenav-grid{
+    width: 100%;    
+}
+
+mat-grid-tile{
+    height: 100%;
+}
+
+.side-profile{
+    width: 100%;
+    height: 100%;
+}
+
+.first-col{
+    padding: 20px 10px;
+    background-color:rgb(26, 26, 26);
+    margin: 0 5px;
+    margin-top: 10px;
+    height: 100%; 
+    flex-flow: column;
+    justify-content: space-between;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0px 0px 20px #818181;
+    border-radius: 10px;
+}
+
+.profile-pic{
+    background-image: url(https://images.cinemaexpress.com/uploads/user/imagelibrary/2017/8/4/original/Jeeva-Stills-14.jpg);
+    height: 120px;
+    width: 120px;
+    padding: 0%;
+    margin-bottom: 5px;
+    border-radius: 50%;
+    background-size:cover;
+    background-position: center;
+}
+
+.my-name{
+    font-size: 22px;
+    padding-top: 1rem;
+    font-weight: 500;
+}
+
+span mat-hint{
+    color: #bbbbbb;
+}
+
+.occupation{
+    color: rgb(230, 230, 230);
+    margin:0%;
+}
+
+.social-media{
+    padding-top: 10px;
+}
+
+.social-media a .icon{
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.social-media a .icons{
+    margin: 0%;
+    font-size: 20px;
+}
+
+.bi-instagram{
+    background:-webkit-linear-gradient(#7c4cb9,#eb564d,#fab959);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.second-col{
+    background-color: rgb(26, 26, 26);
+    margin: 15px 5px 0px 5px ;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #818181;
+    height:100%;
+    padding: 10px;
+}
+
+.second-col ul{
+    padding: 0%;
+    font-size: 18px;
+}
+
+.second-col ul li{
+    list-style: none;
+    padding: 20px;
+    cursor: pointer;
+    margin: 20px 0px;
+    color: #e1e1e1;
+}
+
+hr{
+    display: block;
+    height: 1px;
+    border:0;
+    border-top: 2px solid #4f4a4a;
+}
+
+.second-col ul li:hover{
+    background-color: rgb(41, 41, 41);
+    color: #fff;
+}

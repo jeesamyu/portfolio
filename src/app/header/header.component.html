@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <mat-sidenav-container class="sidenav-container">
+        
+        <mat-sidenav class="side-nav" [(opened)]="opennavOpen" mode="side">
+            <div class="sidenav-grid">
+
+            
+<div class="side-profile">
+
+    <div class="col first-col">
+        <button mat-button class="profile-pic"></button>
+
+        <div>
+            <span class="my-name">Jee_samyu</span><br>
+            <span class="occupation"><p>Software Engineer</p></span>
+            <span><mat-hint>Some time's cant accept the true.</mat-hint></span>
+        </div>
+        <hr>
+        <div class="social-media">
+            <a href="https://www.facebook.com/jee.samyu.9"><i class="bi bi-facebook icons" style="color:#1253df"></i></a>
+            <a href="https://www.instagram.com/jee_samyu/"><i class="bi bi-instagram icon"></i></a>
+            <a href="https://github.com/jeesamyu"><i class="bi bi-github icon" style="color:#fff;"></i></a>
+            <a href="https://www.linkedin.com/in/jeeva-v-8918051a6/"><i class="bi bi-linkedin icon" style="color:#1253df;"></i></a>
+        </div>
+
+    </div>
+
+    <div class=" second-col">
+        <ul>
+            <li>Home</li><hr>
+            <li>About me</li><hr>
+            <li>Work</li><hr>
+            <li routerLink="/contact">Contact</li><hr>
+            <li>Projects</li>
+        </ul>
+    </div>
+</div>
+
+            </div>
+        </mat-sidenav>
+
+        <mat-sidenav-content class="sidenav-content">
+            <mat-toolbar class="nav-toolbar">
+            <mat-toolbar-row class="toolbar-row">
+            <button class="toggleButton" mat-icon-button (click)="changeMode()">
+                <mat-icon class="toggleIcon" *ngIf="icons">{{icons}}</mat-icon>
+            </button>
+
+            <h1 class="main-heading">
+                <span>J</span>
+                <span>E</span>
+                <span>E</span>
+                <span>S</span>
+                <span>A</span>
+                <span>M</span>
+                <span>Y</span>
+                <span>U</span>
+            </h1>
+
+            <div class="nav-items">
+                <span>HOME</span>
+                <span>ABOUT</span>
+                <span routerLink="/contact">CONTACT</span>
+            </div>
+
+        </mat-toolbar-row>
+    </mat-toolbar>
+    <mat-divider class="divider"></mat-divider>
+
+<div>
+    <router-outlet></router-outlet>
+</div>
+</mat-sidenav-content>
+
+    </mat-sidenav-container>
+
+</body>
+</html>
